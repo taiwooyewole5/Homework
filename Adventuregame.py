@@ -1,4 +1,6 @@
-# I added a hidden path that can only be discovered by typing a secret word, and one scenario has more than two options. The secret word is Abracadabra
+# I added a hidden path that can only be discovered by typing a secret word, and one scenario has more than two options.
+
+# Senerios
 
 print("You wake up in a mysterious cave. You see three exits: a DOOR, a LADDER, and a TUNNEL.")
 choice1 = input("Which one do you choose? ").lower()
