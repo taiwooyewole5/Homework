@@ -1,10 +1,11 @@
 # Word Guessing Game (Wordle-style)
 # Extra Feature: Uses a list of Bible names for the secret word!
 # Extra Feature: Replay option after each round
-
+# This  is a simple word guessing game where the player has to guess a secret word chosen from a predefined list of Bible names. The player receives hints based on their guesses, and they can choose to play again after completing a round.
+# I had to use the `random` module to select a secret word from the list of Bible names. The game provides hints based on the player's guesses, indicating correct letters in uppercase and incorrect letters in lowercase, with underscores for unguessed letters.
 import random
 
-# Bible name list
+# The names of Bible characters are used as the secret words
 word_list = ["matthew", "mark", "luke", "john", "peter", "simon", "philip"]
 
 def play_game():
@@ -43,7 +44,7 @@ def play_game():
     print("Congratulations! You guessed it!")
     print(f"It took you {guess_count} guess{'es' if guess_count > 1 else ''}.")
 
-# Main game loop with replay option
+# Main game loop with replay option, it allows the player to play multiple rounds and this is done by asking the player if they want to play again after each round. All  they need to do is type 'yes' or 'no' to continue or exit the game.
 keep_playing = "yes"
 while keep_playing == "yes":
     play_game()
